@@ -1,0 +1,173 @@
+@import "elements.less";
+@royal: #731569;
+@light: #10B0E2;
+@alert: #DE4537;
+@soft: #B1366F;
+@indi: #481D86;
+@pad: 1.4em;
+
+
+//Landing Page Styles
+#index{
+  #intro {
+    background:@light;
+  }
+  h3 {
+    margin:0;
+  }
+}
+
+#intro .info .wrapper {
+  background: rgba(255,255,255,0.8);
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.pure-u-1 .wrapper{
+  .box-sizing(border-box);
+  padding: @pad*2;
+  margin: @pad*2;
+  text-align: left;
+}
+
+#about {
+  background: @royal;
+  .pure-g > div {
+    padding: @pad*2;
+  }
+  h2, h5, p {color:#fff;}
+  h2 {margin-top:0;}
+}
+
+#contact {
+  .pure-g > div {
+    padding: @pad*2;
+  }
+}
+
+
+#gallery {
+  a:hover img {
+    opacity: 0.4;
+    .transition(0.5s, ease-out)
+  }
+  .gTypelift {
+    background: #C9F8EF;
+  }
+  .gEdgevale {
+    background: #FBC174;
+  }
+  .gTapefamous {
+    background: #light;
+  }
+  .gSillycards {
+    background: #EB705E;
+  }
+  .gRoastco {
+    background: #EBADB7;
+  }
+  .gLogos {
+    background: @light;
+  }
+  .gWalk {
+    background: #A1E2DC;
+  }
+  .gAlumni {
+    background: #ffffd1;
+  }
+}
+
+#typelift {
+  .gradient(#C9F8EF, #75ECD7, #C9F8EF)
+}
+
+
+#edgevale {
+  .gradient(#FBC174, #FBC174, #FDE4C4)
+}
+
+#alumni {
+  .gradient(#ffe6d1, #ffe6d1, #ffffd1)
+}
+
+#roastco {
+  background:#B5D4E3;
+}
+
+#sillycards {
+  background: #EB705E;
+}
+#walk {
+  background: #A1E2DC
+}
+
+
+#contact {
+  text-align:center;
+  a {
+    margin: 0 1em;
+  }
+}
+
+
+//Site Styles
+
+body *{
+  font-family: 'Lato', sans-serif;
+  color: @indi;
+}
+
+.pure-menu-horizontal.pure-menu-open{
+  background: @royal;
+  a{color:#fff}
+  a:hover{background:@alert;}
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  border: 10px solid @royal;
+  border-top:0;
+}
+
+.pure-g > div {
+  .box-sizing(border-box);
+}
+
+//Typography Rules
+
+h1, h2, h3, h4 {
+  font-weight: 300;
+}
+
+body{font-size: 16px;}
+p {font-size: 1em;
+line-height: 1.4em;
+margin: 1.4em 0;}
+h1 {font-size: 3.556em;
+line-height: 1.181em;
+margin: 0 0 0.39375em 0;
+// margin: 0.39375em 0em;
+}
+h2, .h2 {font-size: 2.667em;
+line-height: 1.576em;
+margin: 0.525em 0em;}
+h3, .h3 {font-size: 2.000em;
+line-height: 1.4em;
+margin: 0.700em 0em;}
+h4,.h4 {font-size: 1.500em;
+line-height: 1.4 em;
+margin: 0.467em 0em;}
+h5 {font-size: 1em;
+line-height: 1.4em;
+margin: 0.700em 0em;}
+
+@media screen and (max-width: 35.5em) {
+  body {
+    font-size: 14px;
+  }
+  .pure-u-1 .wrapper {
+    margin: 0 !important;
+  }
+}
